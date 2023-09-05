@@ -330,29 +330,71 @@ video {
   height: 100vh;
 }
 
-.container {
-  background-color: #fff8dc;
+.wrapper1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 65%;
+  height: 95vh;
+  margin: 0 auto;
+  background-color: aliceblue;
 }
 
-@font-face {
-  font-family: "Kalam";
-  font-weight: bold; /* ここをboldに指定することで、標準の太さフォントを太字と誤認させる */
-  src: local("Kalam"), local("Kalam-Regular"), url("./fonts/kalam/kalam-v9-latin-regular.woff2") format("woff2"), url("./fonts/kalam/kalam-v9-latin-regular.woff") format("woff");
+.wrapper2 {
+  width: 65%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: aliceblue;
 }
-@font-face {
-  font-family: "dartsfont";
-  src: local("dartsfont"), url("./fonts/dartsfont/dartsfont.eot?#iefix") format("eot"), url("./fonts/dartsfont/dartsfont.woff") format("woff");
+
+.wrapper3 {
+  width: 65%;
+  height: 95vh;
+  margin: 0 auto;
+  background-color: aliceblue;
 }
-.body {
-  font-family: "Kalam", "dartsfont";
-  font-weight: bold;
-  letter-spacing: -1px; /* そのままだと若干幅が広い。お好みで */
-  text-shadow: 0 0 1px #EEE; /* 影をつけると文字が濃く見える。好み */
-  color: #222; /* ここもお好み */
-  transform: rotate(0.05deg);
-  white-space: pre-line; /* コピペできるように */
-  font-size: 1.4rem; /* 文字サイズ。任意 */
-  line-height: 1.3; /* 行間。任意 */
-  line-break: strict; /* 禁則処理。あったほうが自然 */
-  text-align: justify;
+
+@media screen and (max-width: 1280px) {
+  .wrapper1 {
+    width: 80%;
+    height: 95vh;
+    margin: 0 auto;
+    background-color: aliceblue;
+  }
+  .wrapper2 {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: aliceblue;
+  }
+  .wrapper3 {
+    width: 80%;
+    height: 95vh;
+    margin: 0 auto;
+    background-color: aliceblue;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper1 {
+    width: 95%;
+    height: 95vh;
+    margin: 0 auto;
+    background-color: aliceblue;
+  }
+  .wrapper2 {
+    width: 95%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: aliceblue;
+  }
+  .wrapper3 {
+    width: 95%;
+    height: 95vh;
+    margin: 0 auto;
+    background-color: aliceblue;
+  }
+}
+.container {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
