@@ -1,4 +1,4 @@
-import Task from "./Task";
+import Task from './Task';
 
 export default {
   component: Task,
@@ -6,13 +6,12 @@ export default {
   tags: ['autodocs'],
 };
 
-
 export const Default = {
   args: {
     task: {
       id: '1',
       title: 'Test Task',
-      state: 'TASK_PINNED',
+      state: 'TASK_INBOX',
     },
   },
 };
