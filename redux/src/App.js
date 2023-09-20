@@ -1,21 +1,19 @@
 import React from "react";
 import "./App.css";
-// ここから
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 import Count from "./components/Count";
+import Count2 from "./components/Count2";
 
-function App({ count }) {
+function App() {
+  const count = useSelector((state) => state.count);
   return (
     <div className="App">
       <h1>Redux Lesson</h1>
       <p>count: {count}</p>
       <Count />
+      <Count2 />
     </div>
   );
 }
 
-const mapStateToProps = (to) => {
-  return { count: to.count };
-};
-
-export default connect(mapStateToProps)(App);
+export default App;

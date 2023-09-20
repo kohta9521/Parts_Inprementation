@@ -1,16 +1,21 @@
 import React from "react";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 
-function Count({ count }) {
+function Count() {
+  const count = useSelector((state) => state.count);
+  const posts = useSelector((state) => state.posts);
   return (
     <>
-      <div>Countコンポーネント: {count}</div>
+      <div>Count Components: {count}</div>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>
+            {post.id}:{post.title}
+          </li>
+        ))}
+      </ul>
     </>
   );
 }
 
-const mapStateToProps = (one) => {
-  return { count: one.count };
-};
-
-export default connect(mapStateToProps)(Count);
+export default Count;
