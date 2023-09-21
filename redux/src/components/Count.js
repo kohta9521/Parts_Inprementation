@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 function Count() {
-  const count = useSelector((state) => state.count);
+  const count = useSelector((state) => state.countReducer.count);
   const posts = useSelector((state) => state.posts);
   return (
     <>
