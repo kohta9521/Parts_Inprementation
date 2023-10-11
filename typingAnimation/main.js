@@ -1,4 +1,6 @@
-window.onload = play();
+window.onload = function() {
+    play();
+  };
 document.getElementById('tryAgain').addEventListener('click', () => { play() })
 
 function play() {
@@ -15,7 +17,7 @@ function play() {
 
 	setTimeout( function() {
 		// modify this one line below, and see the result !
-		var logoTitle = 'alticreation';
+		var logoTitle = 'Simple';
 		var logoRandom = '';
 		var logoTitleContainer = l.text(0, '98%', '');
 		var possible = "-+*/|}{[]~\\\":;?/.><=+-_)(*&^%$#@!)}";
