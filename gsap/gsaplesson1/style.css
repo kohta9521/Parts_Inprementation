@@ -1,0 +1,26 @@
+header {
+
+}
+
+
+.boxes {
+    position: relative;
+    width: 100px;
+    height: 50px;
+}
+.box {
+    position: absolute;
+    width: 50px;
+    hegiht: 50px;
+    backgroud: limegreen;
+}
+/*左上*/
+.box1 {
+    top: 0;
+    left: 0;
+}
+/*右下*/
+.box2 {
+    bottom: 0;
+    right: 0;
+}
